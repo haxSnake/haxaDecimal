@@ -1,0 +1,10 @@
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\bin\Debug\hexaDECIMAL.exe.config
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\bin\Debug\hexaDECIMAL.exe
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\bin\Debug\hexaDECIMAL.pdb
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csprojAssemblyReference.cache
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Form1.resources
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Properties.Resources.resources
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.GenerateResource.cache
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CoreCompileInputs.cache
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.exe
+C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.pdb
