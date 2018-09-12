@@ -19,7 +19,7 @@ namespace hexaDECIMAL
 
         private void loginBox_TextChanged(object sender, EventArgs e)
         {
-
+ 
         }
 
         private void pswBox_TextChanged(object sender, EventArgs e)
