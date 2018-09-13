@@ -2,6 +2,13 @@
 require_once("connect_ldb.php");
 # Set page title and display header section.
 $page_title = 'Login' ;
+if(!isset($_SESSION)){
+   session_start();
+ }
+
+ if(isset($_SESSION["user"])!=""){
+   header("Location: blank.html");
+ }
 
 # Display any error messages if present.
 if ( isset( $errors ) && !empty( $errors ) )
