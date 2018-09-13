@@ -42,3 +42,5 @@ C:\Users\kiera\Documents\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.Co
 C:\Users\kiera\Documents\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CopyComplete
 C:\Users\kiera\Documents\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.exe
 C:\Users\kiera\Documents\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.pdb
+C:\Users\kiera\Documents\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csprojAssemblyReference.cache
+C:\Users\kiera\Documents\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.UserAccUpdate.resources

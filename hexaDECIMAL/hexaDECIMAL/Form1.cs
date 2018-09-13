@@ -22,6 +22,8 @@ namespace hexaDECIMAL
         private int mov;
         private int movX;
         private int movY;
+        public  static String userId;
+        private String queryId;
 
         public Form1()
         {
@@ -145,6 +147,20 @@ namespace hexaDECIMAL
                             mainMenu.Show();
                             this.Hide();
                         }
+
+                        //STORE USERID FOR SESSION
+                        queryId = "SELECT userId FROM user WHERE email = @email1";
+
+                        using (MySqlCommand cmdId = new MySqlCommand(queryId))
+                        {
+                            cmd.Parameters.Add(new MySqlParameter("@email1", loginBox.Text));
+                            DataTable dtId = new DataTable();
+                            MySqlDataAdapter daId = new MySqlDataAdapter(cmdId);
+                            daId.Fill(dtId);
+                            userId = dtId.Rows[0]["userId"].ToString();
+                        }
+                        
+
                     }
                 }
                 catch (SocketException ex)

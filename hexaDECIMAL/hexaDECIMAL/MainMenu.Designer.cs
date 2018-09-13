@@ -43,6 +43,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ucArticle1 = new hexaDECIMAL.UcArticle();
+            this.userAccUpdate1 = new hexaDECIMAL.UserAccUpdate();
+            this.userAccUpdate2 = new hexaDECIMAL.UserAccUpdate();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -240,10 +242,29 @@
             this.ucArticle1.Size = new System.Drawing.Size(1468, 837);
             this.ucArticle1.TabIndex = 16;
             // 
+            // userAccUpdate1
+            // 
+            this.userAccUpdate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.userAccUpdate1.Location = new System.Drawing.Point(327, 289);
+            this.userAccUpdate1.Name = "userAccUpdate1";
+            this.userAccUpdate1.Size = new System.Drawing.Size(17, 8);
+            this.userAccUpdate1.TabIndex = 17;
+            // 
+            // userAccUpdate2
+            // 
+            this.userAccUpdate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.userAccUpdate2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userAccUpdate2.Location = new System.Drawing.Point(200, 0);
+            this.userAccUpdate2.Name = "userAccUpdate2";
+            this.userAccUpdate2.Size = new System.Drawing.Size(1101, 738);
+            this.userAccUpdate2.TabIndex = 18;
+            // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1301, 738);
+            this.Controls.Add(this.userAccUpdate2);
+            this.Controls.Add(this.userAccUpdate1);
             this.Controls.Add(this.ucArticle1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -275,5 +296,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private UcArticle ucArticle1;
+        private UserAccUpdate userAccUpdate1;
+        private UserAccUpdate userAccUpdate2;
     }
 }

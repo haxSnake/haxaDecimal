@@ -51,7 +51,9 @@ namespace hexaDECIMAL
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            sidePanel.Height = button5.Height;
+            sidePanel.Top = button5.Top;
+            userAccUpdate1.BringToFront();
         }
 
         private void button6_Click(object sender, EventArgs e)

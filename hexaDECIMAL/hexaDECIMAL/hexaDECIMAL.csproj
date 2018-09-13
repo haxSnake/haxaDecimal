@@ -81,6 +81,12 @@
     <Compile Include="UcArticle.Designer.cs">
       <DependentUpon>UcArticle.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAccUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccUpdate.Designer.cs">
+      <DependentUpon>UserAccUpdate.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +105,9 @@
     </Compile>
     <EmbeddedResource Include="UcArticle.resx">
       <DependentUpon>UcArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccUpdate.resx">
+      <DependentUpon>UserAccUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
