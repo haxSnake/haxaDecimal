@@ -11,7 +11,7 @@ namespace hexaDECIMAL
 {
     class Account
     {
-        private static string connStr = @"Data Source = localhost; port = 3306; Initial Catalog = haxadecimal; User Id = user; password = 'user'";
+        private static string connStr = @"Data Source = localhost; port = 3306; Initial Catalog = haxadecimal; User Id = admin; password = 'admin'; SslMode=none";
         public MySqlConnection dbCon = new MySqlConnection(connStr); // MySql database connector
         private DataTable dt;           // data table
         private MySqlCommand cmd;       // MySql command

@@ -38,11 +38,13 @@ namespace hexaDECIMAL.UserControlPanel
                 mdr = cmd.ExecuteReader(); // Reading string from database into the reader
 
                 // geting data from db and display
-
-                label2.Text = mdr.GetString("accountNumber".ToString());
-                label4.Text = mdr.GetString("IBAN");
-                label6.Text = mdr.GetString("sortCode");
-                label8.Text = mdr.GetString("balance".ToString());
+                if (mdr.Read())
+                {
+                    label2.Text = mdr.GetString("accountNumber".ToString());
+                    label4.Text = mdr.GetString("IBAN");
+                    label6.Text = mdr.GetString("sortCode");
+                    label8.Text = mdr.GetString("balance".ToString());
+                }
 
             }
 
