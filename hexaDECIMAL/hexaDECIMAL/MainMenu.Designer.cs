@@ -42,6 +42,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ucArticle1 = new hexaDECIMAL.UcArticle();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -231,10 +232,19 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // ucArticle1
+            // 
+            this.ucArticle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.ucArticle1.Location = new System.Drawing.Point(200, 49);
+            this.ucArticle1.Name = "ucArticle1";
+            this.ucArticle1.Size = new System.Drawing.Size(1468, 837);
+            this.ucArticle1.TabIndex = 16;
+            // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1301, 738);
+            this.Controls.Add(this.ucArticle1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -264,5 +274,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private UcArticle ucArticle1;
     }
 }

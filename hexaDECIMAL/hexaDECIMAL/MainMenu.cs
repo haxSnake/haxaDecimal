@@ -35,7 +35,8 @@ namespace hexaDECIMAL
         {
             sidePanel.Height = button2.Height;
             sidePanel.Top = button2.Top;
-            //currentSquadUC1.BringToFront();
+            ucArticle1.BringToFront();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -18,15 +18,13 @@ namespace hexaDECIMAL
         Button[] btnButtons = new Button[25];
         List<articleClass> articleList = new List<articleClass>();
         articleClass[] articleArray;
-        String querySql = "";
-
 
         public UcArticle()
         {
             InitializeComponent();
         }
 
-        private void CurrentSquadUC_Load(object sender, EventArgs e)
+        private void UcArticle_Load(object sender, EventArgs e)
         {
             //ONLINE MODE
 
@@ -38,7 +36,7 @@ namespace hexaDECIMAL
                     con.Open();
                     //PULL DATA FROM MYSQL DB
                     MySqlCommand cmd = con.CreateCommand();
-                    cmd.CommandText = "select * from article order by artId asc";
+                    cmd.CommandText = "select * from article";
 
                     //CREATE ADAPTER AND TABLE TO PROCESS DATA
                     MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -51,17 +49,19 @@ namespace hexaDECIMAL
                     int btnLeft = 0;
                     int btnTop = ClientSize.Height - (25 * btnHeight);
 
-                    //GENERATE BUTTONS AND MANAGE PLAYER DATA
+                    //GENERATE BUTTONS AND MANAGE ARTICLE DATA
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
-                        //TAKE PLAYER INFO
-                        articleClass article = new articleClass("", "", "","");                        
-                        article.ArtTitle = dt.Rows[i]["artTitle"].ToString();
-                        article.ArtText = dt.Rows[i]["artText"].ToString();
-                        article.ArtAuthor = dt.Rows[i]["artAuthor"].ToString();
-                        article.ArtDate = dt.Rows[i]["artDate"].ToString();
+                        //TAKE ARTICLE INFO
+                        articleClass article = new articleClass("", "", "", "")
+                        {
+                            ArtTitle = dt.Rows[i]["artTitle"].ToString(),
+                            ArtText = dt.Rows[i]["artText"].ToString(),
+                            ArtAuthor = dt.Rows[i]["artAuthor"].ToString(),
+                            ArtDate = dt.Rows[i]["artDate"].ToString()
+                        };
 
-                        //COPY PLAYER TO THE LIST
+                        //COPY ARTICLE TO THE LIST
                         articleList.Add(article);
 
                         //CREATE BUTTON
@@ -72,26 +72,26 @@ namespace hexaDECIMAL
                         btnButtons[i].Left = btnLeft;
                         btnButtons[i].Top = btnTop;
                         btnButtons[i].BringToFront();
-                        btnButtons[i].BackColor = Color.FromArgb(22, 67, 152);
+                        btnButtons[i].BackColor = Color.FromArgb(25, 96, 23);
                         btnButtons[i].ForeColor = Color.White;
                         btnButtons[i].TabStop = false;
                         btnButtons[i].FlatStyle = FlatStyle.Flat;
                         btnButtons[i].FlatAppearance.BorderSize = 0;
-                        btnButtons[i].FlatAppearance.BorderColor = Color.FromArgb(22, 67, 152);
+                        btnButtons[i].FlatAppearance.BorderColor = Color.FromArgb(25, 96, 23);
                         btnButtons[i].Font = new Font("Century Gothic", 12);
                         Controls.Add(btnButtons[i]);
                         btnButtons[i].Click += new EventHandler(btnMySQL_Click);
                         btnTop += btnHeight;
                     }
                 }
-                //MOVE PLAYERS TO AN ARRAY
+                //MOVE ARTICLES TO AN ARRAY
                 articleArray = articleList.ToArray();
 
-                //PRESENT FIRST PLAYER ON INITIAL LOAD
-                //articleArtId.Text = articleArray[0].ArtTitle;
-                //playerPosition.Text = articleArray[0].ArtText;
-                //playerDob.Text = articleArray[0].ArtAuthor;
-                //playerPreviousClub.Text = articleArray[0].ArtDate; 
+                //PRESENT FIRST ARTICLE ON INITIAL LOAD
+                labelTitle.Text = articleArray[0].ArtTitle;
+                labelText.Text = articleArray[0].ArtText;
+                labelAuthor.Text = articleArray[0].ArtAuthor;
+                labelDate.Text = articleArray[0].ArtDate; 
 
             }
             catch (SocketException ex)
@@ -115,7 +115,24 @@ namespace hexaDECIMAL
         //EVENT HANDLER
         private void btnMySQL_Click(object sender, EventArgs e)
         {
-
-        }
+            //USE BUTTON TEXT TO SWITCH BETWEEN ARTICLE
+            Button clickedButton = (Button)sender;
+            switch (clickedButton.Text)
+            {
+                default:
+                    for (int i = 0; i < articleArray.Length; i++)
+                    {
+                        if (clickedButton.Text.Equals(articleArray[i].ArtTitle))
+                        {
+                            //PULL ARTICLE DATA
+                            labelTitle.Text = articleArray[i].ArtTitle;
+                            labelAuthor.Text = articleArray[i].ArtAuthor;
+                            labelText.Text = articleArray[i].ArtText;
+                            labelDate.Text = articleArray[i].ArtDate;
+                        }
+                    }
+                    break;
+            }
+        }        
     }
 }
