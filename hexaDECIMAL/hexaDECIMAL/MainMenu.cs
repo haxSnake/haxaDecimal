@@ -40,7 +40,9 @@ namespace hexaDECIMAL
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            sidePanel.Height = button3.Height;
+            sidePanel.Top = button3.Top;
+            accounts1.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
