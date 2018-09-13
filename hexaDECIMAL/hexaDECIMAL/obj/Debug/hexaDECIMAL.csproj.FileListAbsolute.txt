@@ -40,3 +40,5 @@ D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\Google.Protobuf.xml
 D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.xml
 D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CopyComplete
 D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Home.resources
+D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Transactions.resources
+D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.UcArticle.resources

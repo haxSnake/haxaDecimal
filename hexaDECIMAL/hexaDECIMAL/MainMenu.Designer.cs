@@ -42,8 +42,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.accounts1 = new hexaDECIMAL.UserControlPanel.Accounts();
+            this.transactions1 = new hexaDECIMAL.UserControlPanel.Transactions();
             this.home1 = new hexaDECIMAL.UserControlPanel.Home();
+            this.accounts1 = new hexaDECIMAL.UserControlPanel.Accounts();
+            this.ucArticle1 = new hexaDECIMAL.UcArticle();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -234,26 +236,47 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // accounts1
+            // transactions1
             // 
-            this.accounts1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
-            this.accounts1.Location = new System.Drawing.Point(200, 52);
-            this.accounts1.Name = "accounts1";
-            this.accounts1.Size = new System.Drawing.Size(1468, 837);
-            this.accounts1.TabIndex = 16;
+            this.transactions1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transactions1.Location = new System.Drawing.Point(200, 49);
+            this.transactions1.Name = "transactions1";
+            this.transactions1.Size = new System.Drawing.Size(1468, 837);
+            this.transactions1.TabIndex = 18;
             // 
             // home1
             // 
             this.home1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.home1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.home1.Location = new System.Drawing.Point(200, 49);
             this.home1.Name = "home1";
             this.home1.Size = new System.Drawing.Size(1468, 837);
             this.home1.TabIndex = 17;
             // 
+            // accounts1
+            // 
+            this.accounts1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.accounts1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accounts1.Location = new System.Drawing.Point(200, 49);
+            this.accounts1.Name = "accounts1";
+            this.accounts1.Size = new System.Drawing.Size(1468, 837);
+            this.accounts1.TabIndex = 16;
+            // 
+            // ucArticle1
+            // 
+            this.ucArticle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.ucArticle1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucArticle1.Location = new System.Drawing.Point(200, 49);
+            this.ucArticle1.Name = "ucArticle1";
+            this.ucArticle1.Size = new System.Drawing.Size(1468, 837);
+            this.ucArticle1.TabIndex = 19;
+            // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1668, 886);
+            this.Controls.Add(this.ucArticle1);
+            this.Controls.Add(this.transactions1);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.accounts1);
             this.Controls.Add(this.panel2);
@@ -287,5 +310,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private UserControlPanel.Accounts accounts1;
         private UserControlPanel.Home home1;
+        private UserControlPanel.Transactions transactions1;
+        private UcArticle ucArticle1;
     }
 }
