@@ -112,7 +112,8 @@ namespace hexaDECIMAL
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        //EVENT HANDLER
+        private void btnMySQL_Click(object sender, EventArgs e)
         {
 
         }
