@@ -21,14 +21,14 @@ namespace hexaDECIMAL
             InitializeComponent();
             sidePanel.Height = button1.Height;
             sidePanel.Top = button1.Top;
-            //teamProfileUC1.BringToFront();
+            home1.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             sidePanel.Height = button1.Height;
             sidePanel.Top = button1.Top;
-            //teamProfileUC1.BringToFront();
+            home1.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)

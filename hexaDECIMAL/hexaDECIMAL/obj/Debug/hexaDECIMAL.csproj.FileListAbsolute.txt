@@ -39,3 +39,4 @@ D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.dll
 D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\Google.Protobuf.xml
 D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.xml
 D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CopyComplete
+D:\git\hax\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Home.resources

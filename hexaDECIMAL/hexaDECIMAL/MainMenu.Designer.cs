@@ -43,6 +43,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.accounts1 = new hexaDECIMAL.UserControlPanel.Accounts();
+            this.home1 = new hexaDECIMAL.UserControlPanel.Home();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -241,10 +242,19 @@
             this.accounts1.Size = new System.Drawing.Size(1468, 837);
             this.accounts1.TabIndex = 16;
             // 
+            // home1
+            // 
+            this.home1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
+            this.home1.Location = new System.Drawing.Point(200, 49);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(1468, 837);
+            this.home1.TabIndex = 17;
+            // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1668, 886);
+            this.Controls.Add(this.home1);
             this.Controls.Add(this.accounts1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -276,5 +286,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private UserControlPanel.Accounts accounts1;
+        private UserControlPanel.Home home1;
     }
 }
