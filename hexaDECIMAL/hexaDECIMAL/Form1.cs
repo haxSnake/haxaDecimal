@@ -29,7 +29,7 @@ namespace hexaDECIMAL
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void regButton_Click(object sender, EventArgs e)
