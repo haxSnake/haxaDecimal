@@ -12,12 +12,18 @@ namespace hexaDECIMAL
     {
         //MYSQL DB CONNECTION
         public static string mysqlDatasource = @"Data Source=localhost;
-                                port=3306;Initial Catalog=haxadecimal; User Id='admin'; password='admin'; SslMode=none";
+                                port=3306;Initial Catalog=haxadecimal; User Id=user;password='user'";
         private static MySqlConnection con = new MySqlConnection(mysqlDatasource);
+
+        //SQLITE SOURCE
+        public static string datasource = @"DataSource=HNDSOFTSA13.db";
 
         //CONNECTION CHECK COUNTER
         static int count;
-                
+
+        //USER SUBSCRIPTION INFO
+        public static bool premiumCheck { get; set; }
+
         //MYSQL DB CONNECTIVITY CONFIRMATION
         public static bool onlineCheck { get; set; }
 
@@ -29,6 +35,7 @@ namespace hexaDECIMAL
             count = 0;
             onlineCheck = false;
             errorMsg = false;
+            premiumCheck = false;
         }
 
         //MYSQL DB CONNECTIVITY CHECK

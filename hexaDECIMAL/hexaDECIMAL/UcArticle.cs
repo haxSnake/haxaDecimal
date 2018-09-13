@@ -88,10 +88,10 @@ namespace hexaDECIMAL
                 articleArray = articleList.ToArray();
 
                 //PRESENT FIRST PLAYER ON INITIAL LOAD
-                articleArtId.Text = articleArray[0].ArtTitle;
-                playerPosition.Text = articleArray[0].ArtText;
-                playerDob.Text = articleArray[0].ArtAuthor;
-                playerPreviousClub.Text = articleArray[0].ArtDate; 
+                //articleArtId.Text = articleArray[0].ArtTitle;
+                //playerPosition.Text = articleArray[0].ArtText;
+                //playerDob.Text = articleArray[0].ArtAuthor;
+                //playerPreviousClub.Text = articleArray[0].ArtDate; 
 
             }
             catch (SocketException ex)
