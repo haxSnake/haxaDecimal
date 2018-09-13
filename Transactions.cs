@@ -47,7 +47,11 @@ namespace hexaDECIMAL.UserControlPanel
                 {
                     //CREATE OBJECT FOR THE LISTVIEW
                     ListViewItem item = new ListViewItem(mdr.GetString("transactionDate"));
-                    item.SubItems.Add(mdr.GetString("TransactionType"));
+                    if (mdr.GetInt32("TransactionType") == 1) {
+                        item.SubItems.Add("Deposit");
+                    } else {
+                        item.SubItems.Add("Withdraw");
+                    }
                     item.SubItems.Add(mdr.GetString("transactionForeignAccount"));
                     item.SubItems.Add(mdr.GetString("value"));
                     
