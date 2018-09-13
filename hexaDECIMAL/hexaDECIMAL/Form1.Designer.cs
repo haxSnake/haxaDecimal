@@ -37,6 +37,7 @@
             this.pswBox = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.loginButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(149, 34);
-            this.loginButton.TabIndex = 0;
+            this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Log in";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
@@ -60,7 +61,7 @@
             this.loginBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(449, 34);
-            this.loginBox.TabIndex = 2;
+            this.loginBox.TabIndex = 1;
             this.loginBox.Text = "Email";
             this.loginBox.Click += new System.EventHandler(this.loginBox_Click);
             this.loginBox.TextChanged += new System.EventHandler(this.loginBox_TextChanged);
@@ -113,7 +114,7 @@
             this.pswBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pswBox.Name = "pswBox";
             this.pswBox.Size = new System.Drawing.Size(449, 34);
-            this.pswBox.TabIndex = 6;
+            this.pswBox.TabIndex = 2;
             this.pswBox.Text = "Password";
             this.pswBox.Click += new System.EventHandler(this.pswBox_Click);
             this.pswBox.TextChanged += new System.EventHandler(this.pswBox_TextChanged);
@@ -128,7 +129,7 @@
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(155, 25);
-            this.checkBox1.TabIndex = 7;
+            this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Remember Me";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -143,12 +144,23 @@
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 8;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(572, 583);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(154)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pswBox);
@@ -178,6 +190,7 @@
         private System.Windows.Forms.TextBox pswBox;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

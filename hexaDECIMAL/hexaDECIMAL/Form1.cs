@@ -123,12 +123,12 @@ namespace hexaDECIMAL
                         if (mdr.Read())
                         {
                             //USER SUBSCRIPTION TYPE
-                            databaseOperations.premiumCheck = mdr.GetBoolean("premium");
+                            //databaseOperations.premiumCheck = mdr.GetBoolean("premium");
                         }
 
                         if (loginCheck == 0)
                         {
-                            label1.Text = "Incorrect email or password!";
+                            label2.Text = "Incorrect email or password!";
                         }
 
                         else
