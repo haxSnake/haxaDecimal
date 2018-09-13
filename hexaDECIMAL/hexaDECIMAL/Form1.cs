@@ -77,14 +77,14 @@ namespace hexaDECIMAL
         private void loginButton_Click(object sender, EventArgs e)
         {
             //CONNECTION CHECK WITH OFFLINE MODE PROMPT
-            //FormTeamProfile mainMenu = new FormTeamProfile();
+            MainMenu mainMenu = new MainMenu();
             databaseOperations.dbConnectionCheck();
             if (!databaseOperations.dbConnectionCheck())
             {
                 DialogResult result = MessageBox.Show("Would you like to start the application in offline mode?", "Connection error", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    //mainMenu.Show();
+                    mainMenu.Show();
                     this.Hide();
                     result = DialogResult.None;
                 }
@@ -142,7 +142,7 @@ namespace hexaDECIMAL
                                 Properties.Settings.Default.remember = "yes";
                             }
 
-                            //mainMenu.Show();
+                            mainMenu.Show();
                             this.Hide();
                         }
                     }
