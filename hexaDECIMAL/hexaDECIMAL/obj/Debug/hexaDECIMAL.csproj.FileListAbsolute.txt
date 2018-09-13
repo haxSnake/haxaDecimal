@@ -22,5 +22,4 @@ D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.dll
 D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\Google.Protobuf.xml
 D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.xml
 D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CopyComplete
-D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csprojAssemblyReference.cache
 D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.MainMenu.resources
