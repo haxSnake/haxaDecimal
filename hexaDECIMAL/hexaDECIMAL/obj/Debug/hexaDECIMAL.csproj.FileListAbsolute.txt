@@ -8,3 +8,17 @@ C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csp
 C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CoreCompileInputs.cache
 C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.exe
 C:\Users\40315171\source\repos\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.pdb
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Form1.resources
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.Properties.Resources.resources
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.GenerateResource.cache
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CoreCompileInputs.cache
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.exe
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.pdb
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\hexaDECIMAL.exe.config
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\hexaDECIMAL.exe
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\hexaDECIMAL.pdb
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\Google.Protobuf.dll
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.dll
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\Google.Protobuf.xml
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\bin\Debug\MySql.Data.xml
+D:\git\haxaDecimal\hexaDECIMAL\hexaDECIMAL\obj\Debug\hexaDECIMAL.csproj.CopyComplete
